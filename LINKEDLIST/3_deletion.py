@@ -3,6 +3,7 @@ class Node:
         self.data = data  # actual data
         self.next = next  # address of next node
 
+
 class LinkedList:
     def __init__(self, head=None):
         self.head = head  # start node
