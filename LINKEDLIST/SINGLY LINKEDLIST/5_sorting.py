@@ -12,40 +12,44 @@ class LinkedList:
         new_node = Node(data)
         if self.head:
             current_node = self.head
-
             while current_node.next is not None:
                 current_node = current_node.next
+
             current_node.next = new_node
         else:
             self.head = new_node
 
-    # <<<<<<<<<<<<<<<<----------Searching element in linkedlist------------>>>>>>>>>
-    def search(self, x):
+    def sorting(self):
         current_node = self.head
-        while current_node is not None:
-            if current_node.data == x:
-                print("element found")
+        lst = []
+        while current_node:
+            lst.append(current_node.data)
             current_node = current_node.next
+        lst.sort()
+        new = LinkedList()
+        for i in lst:
+            new.add(i)
+        new.printList()
 
-    # <<<<<<--------------------printing linkedlist ---------------------->>>>>>>>>>>
     def printList(self, first=None):
-        if self.head is None:
-            print("The list is empty.")
-            return
+        current_node = self.head
+        if current_node is None:
+            print("List is empty")
 
         self.first = first
         first = self.head
         while first:
-            print(first.data, "-->", end=" ")
+            print(first.data, "->", end=" ")
             first = first.next
-        print("None")
+        print(None)
+
 
 obj = LinkedList()
 
+obj.add(9)
+obj.printList()
+obj.add(6)
+obj.printList()
 obj.add(8)
 obj.printList()
-
-obj.add(90)
-obj.printList()
-
-obj.search(90)
+obj.sorting()
