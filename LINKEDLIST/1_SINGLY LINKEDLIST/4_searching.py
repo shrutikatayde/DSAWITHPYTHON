@@ -47,7 +47,6 @@ obj = LinkedList()
 
 obj.add(8)
 obj.printList()
-
 obj.add(90)
 obj.printList()
 
