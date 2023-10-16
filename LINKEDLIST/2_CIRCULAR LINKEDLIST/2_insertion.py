@@ -23,10 +23,10 @@ class LinkedList:
     def addLast(self, data):
         new_node = Node(data)
         if self.head:
-            current_node = self.head
-            while current_node.next is not self.head:
-                current_node = current_node.next
-            current_node.next = new_node
+            # current_node = self.head
+            # while current_node.next is not self.head:
+            #     current_node = current_node.next
+            # current_node.next = new_node
 
             self.tail.next = new_node
             self.tail = new_node
