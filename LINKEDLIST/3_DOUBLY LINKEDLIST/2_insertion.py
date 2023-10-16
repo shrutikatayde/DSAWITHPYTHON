@@ -1,7 +1,8 @@
 class Node:
-    def __init__(self, data, next=None):
+    def __init__(self, data, next=None, prev=None):
         self.data = data
         self.next = next
+        self.prev = prev
 
 
 class LinkedList:
@@ -74,6 +75,5 @@ obj.printList()
 obj.addLast(6)
 obj.printList()
 
-obj.addMid(65, 0)
+obj.addMid(65, 3)
 obj.printList()
-
