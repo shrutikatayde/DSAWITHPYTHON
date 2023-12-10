@@ -40,7 +40,7 @@ s1 = Stack()
 s1.push(10)
 s1.push(39)
 s1.push(47)
-a
+
 print("total ele: ", s1.size())
 print("top ele: ", s1.peek())
 print("pop ele: ", s1.pop())
