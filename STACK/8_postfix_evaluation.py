@@ -6,6 +6,7 @@ print("Postfix Expression for evaluation: ", postfix)
 
 operator = ["+", "-", "*", "/", "^"]
 operand = []
+
 for ele in postfix:
     if ele not in operator:
         operand.append(ele)
@@ -23,4 +24,5 @@ for ele in postfix:
         elif ele == "^":
             ans = n2 ** n1
         operand.append(str(ans))
-print("Output: ", operand[0])
+
+print("Postfix Evaluation: ", operand[0])
