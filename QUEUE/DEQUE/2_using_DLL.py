@@ -4,7 +4,6 @@ class Node:
         self.ele = ele
         self.next = next
 
-
 class Deque:
     def __init__(self):
         self.front = None

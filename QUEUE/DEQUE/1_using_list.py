@@ -48,7 +48,6 @@ class Deque:
     def size(self):
         return len(self.ele)
 
-
 d1 = Deque()
 d1.insert_front(20)
 d1.insert_front(90)
